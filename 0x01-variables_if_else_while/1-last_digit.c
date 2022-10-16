@@ -1,37 +1,36 @@
 #include <stdio.h>
+#include <stdio.h>
+#include <time.h>
 /**
- *  * main-progrtam entry point
- *   * Return:0 success, non zero fail
- *    */
+ *main-progrtam entry point
+ *Return:0 success, non zero fail
+ */
+
 int main(void)
 {
-		int m, i, j;
+	int n;
+	int a;
 
-			for (i = '0'; i <= '9'; i++)
-					{
-								for (j = '0'; j <= '9'; j++)
-											{
-															for (m = '0'; m <= '9'; m++)
-																			{
-																								if (i < j && j < m)
-																													{
-																																			putchar(i);
-																																								putchar(j);
-																																													putchar(m);
-																																																		if (i == '7' && j == '8' && m == '9')
-																																																								{
-																																																															break;
-																																																																				}
-																																																							else
-																																																													{
-																																																																				putchar(',');
-																																																																										putchar(' ');
-																																																																															}
-																																																											}
-																											}
-																	}
-									}
-				putchar ('\n');
-								return (0);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
+
+	a = n % 10;
+
+	if (a > 5)
+	{	printf("Last digit of %d is %d and is greater than 5\n", n, a);
+
+	}
+
+	else if (a == 0)
+	{
+		printf("Last digit of %d is %d and is 0\n", n, a);
+	}
+	else if (a < 6)
+	{
+		printf("Last digit of %d id %d and is less than 6 and not 0\n", n, a);
+	}
+
+
+	return (0);
 }
-
