@@ -1,7 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- * main - print lower case letter with the exception of e and q
+ * main - print lower case letter
+ * with the exception of e and q
  * Return: always 0
  */
 
