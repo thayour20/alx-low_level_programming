@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - print alphabelt with char
+ * print_alphabet - print alphabelt with char
  * Return: always 0
  */
 
