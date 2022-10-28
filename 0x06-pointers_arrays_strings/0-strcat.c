@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * *_strcat - to concatonate two strings
- * @*dest: string 1
- * @*src: grring 2
+ * _strcat - to concatonate two strings
+ * @dest: string 1
+ * @src: grring 2
  * Return: return concatonated string
  */
 
